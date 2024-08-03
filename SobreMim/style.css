@@ -1,0 +1,71 @@
+/* Reset básico para remover margens e espaçamentos padrão */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    background-color: #fbeff5; /* Rosa bebê */
+    color: #333;
+    padding: 20px;
+  }
+  
+  header {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    margin-bottom: 20px;
+    text-align: center; /* Centralizar conteúdo dentro do header */
+  }
+  
+  /* Estilo para a imagem do perfil */
+  #profile-photo {
+    width: 150px; /* Tamanho da imagem */
+    height: 150px;
+    border-radius: 50%; /* Torna a imagem redonda */
+    object-fit: cover; /* Ajusta a imagem para cobrir o espaço sem distorcer */
+    margin-bottom: 20px; /* Espaçamento abaixo da imagem */
+    
+  }
+
+  .flex-container {
+    display: flex;
+    justify-content: center; /* Centraliza horizontalmente */
+    align-items: center; /* Centraliza verticalmente, se necessário */
+  }
+  
+  h2 {
+    font-size: 1.5rem;
+    margin-bottom: 10px;
+    color: #333;
+  }
+  
+  p {
+    margin-bottom: 15px;
+    color: #555;
+    text-align: justify; /* Justifica o texto dos parágrafos */
+  }
+  
+  a {
+    color: #ff6f91; /* Rosa vibrante */
+    text-decoration: none;
+  }
+  
+  a:hover {
+    text-decoration: underline;
+  }
+  
+  /* Estilos para seções específicas */
+  #sobre, #Vida\ Profissional, #Vida\ Acadêmica {
+    margin-bottom: 20px;
+  }
+  
+  #computer {
+    max-width: 800px;
+    margin: 0 auto;
+  }
+  

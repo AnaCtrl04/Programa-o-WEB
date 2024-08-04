@@ -6,7 +6,7 @@
   }
   
   body {
-    font-family: Arial, sans-serif;
+    font-family: Courier, monospace;
     line-height: 1.6;
     background-color: #fbeff5; /* Rosa bebê */
     color: #333;
@@ -24,11 +24,13 @@
   
   /* Estilo para a imagem do perfil */
   #profile-photo {
-    width: 150px; /* Tamanho da imagem */
-    height: 150px;
+    width: 200px; /* Tamanho da imagem */
+    height: 200px;
     border-radius: 50%; /* Torna a imagem redonda */
+    border: 3px solid rgb(231, 33, 215);  /* Borda rosa sólida de 3px */
+            box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.5); /* Sombra */
     object-fit: cover; /* Ajusta a imagem para cobrir o espaço sem distorcer */
-    margin-bottom: 20px; /* Espaçamento abaixo da imagem */
+    margin-bottom: -15px; /* Espaçamento abaixo da imagem */
     
   }
 

@@ -1,0 +1,37 @@
+Gitflow é uma metodologia baseada no GIT, para auxilio a gerenciar e organizar o processo de desenvovimento.
+
+Estrutura do Gitflow
+
+Branch master:
+- Contém o código de produção, ou seja, a versão estável e pronta para ser lançada.
+- Cada commit na branch master deve estar relacionado a uma versão que pode ser lançada.
+
+Branch develop:
+- Serve como a principal linha de desenvolvimento.
+- Novos recursos e mudanças são integrados aqui antes de serem liberados para produção.
+- Todos os desenvolvimentos são inicialmente feitos nessa branch.
+
+Branch feature:
+- Criada a partir da branch develop para trabalhar em novos recursos.
+- Nomeada geralmente como feature/nome-da-feature.
+- Quando o desenvolvimento do recurso é concluído, a branch feature é mesclada de volta na branch develop.
+
+Branch release:
+- Usada para preparar uma nova versão do software.
+- Criada a partir da branch develop quando um conjunto de recursos está pronto para ser lançado.
+- Permite correções de bugs e pequenos ajustes antes do lançamento.
+- Após a conclusão, a branch release é mesclada na master e na develop, e recebe uma tag.
+
+Branch hotfix:
+- Criada a partir da branch master quando é necessário corrigir um bug crítico em produção.
+- Após a correção, a branch hotfix é mesclada na master e na develop.
+
+Os pontos positivos são Organização, sendo um falicitado para gerencimaneto de diferentes tipos de trabalho.
+Paralelismo, permitindo que diferentes equipes trabalhem em paralelo. 
+Controle de Versões, falicitando o controle e a ratreabilidade das versões liberadas.
+
+Os pontos negativos são Complexidade, pode ser muito complexo para equipes ágeis. 
+Overhead, requer mais esforço para gerenciar as diferentes branches e realizar merges.
+
+Essa metodologia é amplamente utilizada em projetos de software onde há a necessidade de lançar versões estáveis regularmente e onde o desenvolvimento de novos recursos e 
+correções pode ocorrer em paralelo.

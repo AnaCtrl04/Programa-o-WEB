@@ -9,7 +9,7 @@
 <body>
     <div class="container">
         <h1>Cadastro de Pessoa</h1>
-        <form>
+        <form method="POST" action="/processar-cadastro">
             <div class="form-group">
                 <label for="nome">Nome:</label>
                 <input type="text" id="nome" name="nome" required>
@@ -27,13 +27,15 @@
                 <input type="date" id="data-nascimento" name="data-nascimento" required>
             </div>
             <div class="form-group">
-                <label for="sexo">Sexo:</label>
-                <select id="sexo" name="sexo" required>
-                    <option value="">Selecione</option>
-                    <option value="masculino">Masculino</option>
-                    <option value="feminino">Feminino</option>
-                    <option value="outro">Outro</option>
-                </select>
+                <label>Sexo:</label>
+                <div class="checkbox-group">
+                    <input type="checkbox" id="masculino" name="sexo" value="masculino">
+                    <label for="masculino">Masculino</label>
+                    <input type="checkbox" id="feminino" name="sexo" value="feminino">
+                    <label for="feminino">Feminino</label>
+                    <input type="checkbox" id="outro" name="sexo" value="outro">
+                    <label for="outro">Outro</label>
+                </div>
             </div>
             <div class="form-group">
                 <label for="endereco">Endereço:</label>
@@ -76,7 +78,10 @@
                     <option value="TO">Tocantins</option>
                 </select>
             </div>
-            <button type="submit">Cadastrar</button>
+            <div class="form-actions">
+                <button type="submit">Cadastrar</button>
+                <button type="reset">Limpar</button>
+            </div>
         </form>
     </div>
 </body>

@@ -1,9 +1,9 @@
 <?php
 
-const NOME = "Ana Carolina";
-const SOBRENOME = "Pereira Martins";
+$nome = "Ana Carolina";
+$sobrenome = "Pereira Martins";
 
-$nomeCompleto = NOME . " " . SOBRENOME;
+$nomeCompleto = $nome . " " . $sobrenome;
 
-echo "O nome completo é: " . $nomeCompleto;
+echo "Meu nome é: " . $nomeCompleto;
 ?>

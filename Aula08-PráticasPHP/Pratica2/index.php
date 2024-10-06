@@ -22,7 +22,7 @@ if ($salario1 > $salario2) {
     if ($salario1 < $salario2) {
         echo 'O salario 2 é maior do que o salario 1';
     } else {
-        echo 'Os dois salários sãoiguais';
+        echo 'Os dois salários são iguais';
     }
 }
 echo '<br><br><br>';

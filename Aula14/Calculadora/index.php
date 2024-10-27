@@ -5,7 +5,6 @@
     $calculadora->setOperador1(10);
     $calculadora->setOperador2(10);
     echo $calculadora->somar();
-    echo $calculadora->dividir();
 
     
 ?>

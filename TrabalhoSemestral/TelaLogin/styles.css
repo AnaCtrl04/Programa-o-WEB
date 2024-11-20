@@ -51,19 +51,22 @@ body {
   transform: translate(-50%, -50%);
   z-index: 3; /* Formulário com maior prioridade de exibição */
   padding: 20px;
-
+  background-color:  bisque;
+  mask-image: (bisque , transparent);
+  border-radius: 10px;
 }
 
 .form label,
 .form input {
   display: block;
   margin: 5px 0;
-  color: white;
+  color: rgb(0, 0, 0);
   font-family: Montserrat, sans-serif;
   font-weight: bold;
   border-radius: 5px;
   width:  250px;
   height: 30px;
+  
 }
 
 .btn-entrar {
